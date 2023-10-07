@@ -137,7 +137,7 @@ p {
 .two-column > .col-left {
 	width: 50%;
 	box-sizing: border-box;
-	padding-right: var(--spacing-md);
+	padding: 0 var(--spacing-md) 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -147,7 +147,7 @@ p {
 .two-column > .col-right {
 	width: 50%;
 	box-sizing: border-box;
-	padding-left: var(--spacing-md);
+	padding: 0 0 0 var(--spacing-md);
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -254,4 +254,35 @@ p {
 }
 .navbar-button:hover {
 	background-color: rgba(250, 250, 250, 0.5);
+}
+
+main {
+	margin: var(--spacing-xl) 0;
+}
+
+/* Hero Styles */
+.button-container {
+	display: flex;
+	flex-direction: row;
+	margin: var(--spacing-md) 0;
+}
+
+.button-container button:nth-of-type(2) {
+	margin: 0 0 0 var(--spacing-md);
+	color: var(--purple-2);
+}
+
+.hero p {
+	max-width: 480px;
+}
+
+.hero .hero-phone-container {
+	height: 564px;
+	align-items: flex-end;
+}
+
+.hero-phone {
+	height: 628px;
+	/* transform: translateY(-32px); */
+	transform: translateX(35px);
 }
