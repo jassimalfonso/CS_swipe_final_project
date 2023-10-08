@@ -286,3 +286,18 @@ main {
 	/* transform: translateY(-32px); */
 	transform: translateX(35px);
 }
+
+/* Partners Section */
+.partners-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	margin: var(--spacing-xl) 0;
+	column-gap: var(--spacing-md);
+	row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+	height: 60px;
+	place-self: center;
+}
