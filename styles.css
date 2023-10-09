@@ -17,7 +17,7 @@
 	--p-size: 18px;
 	--p-height: 26px;
 	--secondary-text-size: 14px;
-	--secondary-text-size: 18px;
+	--secondary-text-height: 18px;
 	--button-size: 16px;
 	/* SPACING */
 	--spacing-sm: 8px;
@@ -121,7 +121,7 @@ p {
 	margin: var(--spacing-md) 0;
 }
 
-/* Layout Styles */
+/* LAYOUT STYLES */
 .section-container {
 	width: 100%;
 	max-width: var(--standard-width);
@@ -191,7 +191,7 @@ p {
 
 .secondary-text {
 	font-size: var(--secondary-text-size);
-	line-height: var(--subtitle-height);
+	line-height: var(--secondary-text-height);
 	color: var(--text-grey);
 	letter-spacing: 0.25px;
 }
@@ -245,7 +245,7 @@ p {
 	transform: translateX(4px);
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -283,7 +283,7 @@ main {
 	margin: var(--spacing-xl) 0;
 }
 
-/* Hero Styles */
+/* HERO STYLES */
 .button-container {
 	display: flex;
 	flex-direction: row;
@@ -309,7 +309,7 @@ main {
 	transform: translate(32px, -32px)
 }
 
-/* Partners Section */
+/* PARTNERS SECTION */
 .partners-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -324,7 +324,7 @@ main {
 	place-self: center;
 }
 
-/* Unified Platform Section */
+/* UNIFIED PLATFORM SECTION */
 .unified-platform-section {
 	padding: var(--spacing-xl) 0;
 }
@@ -342,7 +342,7 @@ main {
 	background-color: var(--primary-accent);
 }
 
-/* Graphic Grid Section */
+/* GRAPHIC GRID SECTION */
 .graphic-grid {
 	display: grid;
 	grid-template-areas:
@@ -374,4 +374,41 @@ main {
 	box-shadow: var(--standard-box-shadow);
 }
 
+/* INTEGRATION SECTION STYLES */
+.integration-section {
+	color: var(--text-light);
+	background-color: var(--primary-accent);
+}
 
+.integration-section .primary-button {
+	background-color: var(--blue-1);
+	color: var(--primary-accent);
+	margin: var(--spacing-lg) 0 0 0;
+}
+.integration-section .primary-button:hover {
+	background-color: var(--bg-white);
+}
+
+.integration-section .card-container {
+	display: flex;
+	margin: var(--spacing-lg) 0;
+}
+
+.integration-section .card-container .card {
+	width: 50%;
+}
+
+.integration-section .secondary-button {
+	color: var(--blue-1);
+
+}
+
+#api-code {
+	max-width: 470px;
+	margin: 0 0 var(--spacing-md) 0;
+	border-radius: 20px;
+}
+#terminal-code {
+	max-width: 470px;
+	border-radius: 20px;
+}
