@@ -131,6 +131,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: flex-start;
 	box-sizing: border-box;
 }
 
@@ -283,8 +284,7 @@ main {
 
 .hero-phone {
 	height: 628px;
-	/* transform: translateY(-32px); */
-	transform: translateX(35px);
+	transform: translate(32px, -32px)
 }
 
 /* Partners Section */
@@ -300,4 +300,14 @@ main {
 .partners-grid img {
 	height: 60px;
 	place-self: center;
+}
+
+/* Unified Platform Section */
+
+.unified-platform-section .primary-button {
+	background-color: var(--purple-1);
+	margin: var(--spacing-md) 0;
+}
+.unified-platform-section .primary-button:hover {
+	background-color: var(--primary-accent);
 }
